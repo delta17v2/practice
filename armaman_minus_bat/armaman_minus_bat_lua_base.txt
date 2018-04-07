@@ -1,0 +1,61 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Armaman: Minus Bat
+	//=================================================================================================================
+	"armaman_minus_bat"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"custom_abilities/rambo/armaman_minus_bat/armaman_minus_bat"
+		"AbilityTextureName"			"custom/armaman_minus_bat"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+	//	"precache"
+	//	{
+	//		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_<hero>.vsndevts"
+	//		"particle"	"particles/units/heroes/hero_<hero>/<hero>_<ability>.vpcf"
+	//	}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bat_reduction"			"1.12 0.90 0.72 0.57"
+			}
+		}
+		
+	// Template Ability
+	"DOTA_Tooltip_ability_armaman_minus_bat"
+		"Trigger Fingers"
+
+	"DOTA_Tooltip_ability_armaman_minus_bat_Description"
+		"Reduces Sniper's base attack time."
+
+	"DOTA_Tooltip_ability_armaman_minus_bat_Lore"
+		"My trigger fingers! Itching for vengeance!"
+
+	"DOTA_Tooltip_ability_armaman_minus_bat_bat_reduction"			"ATTACK TIME:"
+	}
+	
+}

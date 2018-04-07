@@ -1,0 +1,75 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Rambo: Aimbots
+	//=================================================================================================================
+	"rambo_aimbots"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"custom_abilities/rambo/rambo_aimbots/rambo_aimbots"
+		"AbilityTextureName"			"custom/rambo_aimbots"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+	//	"precache"
+	//	{
+	//		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_<hero>.vsndevts"
+	//		"particle"	"particles/units/heroes/hero_<hero>/<hero>_<ability>.vpcf"
+	//	}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"atk_spd_bns"			"20 40 60 80"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"chance"				"40"
+			}
+			
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"15 25 35 45"
+			}
+		}
+		
+	// Template Ability
+	"DOTA_Tooltip_ability_rambo_aimbots"
+		"Aimbots"
+
+	"DOTA_Tooltip_ability_rambo_aimbots_Description"
+		"Passive attack speed and accuracy increase"
+
+	"DOTA_Tooltip_ability_rambo_aimbots_Lore"
+		"Ble"
+
+	"DOTA_Tooltip_ability_rambo_aimbots_atk_spd_bns"			"ATTACK SPEED:"
+	
+	"DOTA_Tooltip_ability_rambo_aimbots_accuracy"				"%ACCURACY:"
+	}
+	
+}

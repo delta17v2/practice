@@ -1,0 +1,80 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Rambo: Nanobots
+	//=================================================================================================================
+	"rambo_nanobotics"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"custom_abilities/rambo/rambo_nanobotics/rambo_nanobotics"
+		"AbilityTextureName"			"custom/rambo_nanobotics"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
+			"particle"	"particles/units/heroes/hero_legion_commander/legion_commander_press_the_attack_buff.vpcf"
+			"particle"	"particles/units/heroes/hero_legion_commander/legion_commander_press_the_attack_hero_effect.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"20"
+		"AbilityManaCost"				"40"
+		
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_regen"			"10 20 30 40"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"move_speed"			"10 20 30 40"
+			}
+			
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"8"
+			}
+		}
+		
+	// Template Ability
+	"DOTA_Tooltip_ability_rambo_nanobotics"						"nanobots"
+
+	"DOTA_Tooltip_ability_rambo_nanobotics_Description"
+		"Grants health regen and movement boost for a while"
+
+	"DOTA_Tooltip_ability_rambo_nanobotics_Lore"
+		"Ble2"
+
+	"DOTA_Tooltip_ability_rambo_nanobotics_health_regen"			"HEALTH REGEN:"
+	
+	"DOTA_Tooltip_ability_rambo_nanobotics_move_speed"			"%MOVE SPEED:"
+	}
+	
+}
