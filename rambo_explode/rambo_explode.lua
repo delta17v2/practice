@@ -36,16 +36,14 @@ function rambo_explode:OnSpellStart()
 		ApplyDamage( damage )
 
 		-- Add slow modifier
-		enemy:AddNewModifier(
-			self:GetCaster(),
-			self,
-			"modifier_rambo_explode",
-			{ duration = slow_duration }
-		)
+--		enemy:AddNewModifier(
+----			self:GetCaster(),
+--			self,
+--			"modifier_rambo_explode",
+--			{ duration = slow_duration }
+--		)
 	end	
 	
---00	local enemies = FindUnitsInRadius(		/ub case : the ( was one space away before
-
 	--damages the caster
 	local caster = {
 		victim = self:GetCaster(),
